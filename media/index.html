@@ -84,6 +84,29 @@
                 color: #00D6CB;
             }
 
+            .video-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+            }
+
+            .video-wrapper {
+              position: relative;
+              width: 100%;
+              padding-bottom: 56.25%; /* 16:9 aspect ratio */
+              margin-bottom: 20px;
+            }
+
+            .video-wrapper iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border: none;
+            }
+
         </style>
     </head>
     <script>
@@ -106,8 +129,20 @@
                     <i> <a href="/media">Media</a> </i>
                     <a href="/about">About</a>
                 </div>
-                <p> Impossible Geometries - Live 7.29.23 @ Alchemical Studios NYC </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VlXKsHbAg6Q?si=jzue3Uf2TDGrqerr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-container">
+                    <p> Impossible Geometries - Live 7.29.23 @ Alchemical Studios NYC </p>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VlXKsHbAg6Q?si=jzue3Uf2TDGrqerr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p> Media 2 </p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                    </div>
+                    <p> Media 3 </p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

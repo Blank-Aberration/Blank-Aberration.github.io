@@ -84,18 +84,18 @@
                 color: #00D6CB;
             }
 
-            .video-container {
+            .media-container {
               display: flex;
               flex-direction: column;
               align-items: center;
               width: 100%;
+              margin-bottom: 30px;
             }
 
             .video-wrapper {
               position: relative;
               width: 100%;
               padding-bottom: 56.25%; /* 16:9 aspect ratio */
-              margin-bottom: 20px;
             }
 
             .video-wrapper iframe {
@@ -136,13 +136,22 @@
                     <a href="/about">About</a>
                     <a href="https://www.instagram.com/blankaberration/" target="_blank">Insta</a>
                 </div>
-                <div class="video-container">
+                <div class="media-container">
+                    <p> Studio Img </p>
+                    <img src="studio_1.png" width="100%">
+                </div>
+                <div class="media-container">
+                    <p> Studio Vid </p>
+                    <video width="100%" controls>
+                    <source src="studio_1.mp4" type="video/mp4">
+                </div>
+                <div class="media-container">
                     <p> Impossible Geometries - Live 7.29.23 @ Alchemical Studios NYC </p>
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VlXKsHbAg6Q?si=jzue3Uf2TDGrqerr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                </div>
-               <div class="video-container">
+               </div>
+               <div class="media-container">
                     <p> Khachkars - Live AV Performance (Yerevan, Armenia) </p>
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/QhSolFR89Yc?si=fWVdZi0vUOzbg2kH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
